@@ -21,6 +21,8 @@ import movieSixteen from '../../images/movie16.png';
 
 import likeInactive from '../../images/like-inactive.png';
 import likeActive from '../../images/like-active.png';
+import btnDelMovie from '../../images/btn-del-movie.svg';
+
 
 function MoviesCard() {
     return (
@@ -141,7 +143,7 @@ function MoviesCard() {
                         <img className="movies-card__image" src={movieThirteen} alt="Рудбой" />
                         <figcaption className="movies-card__description-like-container">
                             <p className="movies-card__description">Рудбой</p>
-                            <img type="button" className="movies-card__like-button" src={likeInactive} alt="Иконка кнопки сохранения фильма"></img>
+                            <img type="button" className="movies-card__del-button" src={btnDelMovie} alt="Иконка кнопки сохранения фильма"></img>
                         </figcaption>
                         <div className="movies__line"></div>
                         <p className="movies-card__duration">1ч 42м</p>
@@ -150,7 +152,7 @@ function MoviesCard() {
                         <img className="movies-card__image" src={movieFourteen} alt="Скейт — кухня" />
                         <figcaption className="movies-card__description-like-container">
                             <p className="movies-card__description">Скейт — кухня</p>
-                            <img type="button" className="movies-card__like-button" src={likeActive} alt="Иконка кнопки сохранения фильма"></img>
+                            <img type="button" className="movies-card__del-button" src={btnDelMovie} alt="Иконка кнопки сохранения фильма"></img>
                         </figcaption>
                         <div className="movies__line"></div>
                         <p className="movies-card__duration">1ч 42м</p>
@@ -159,7 +161,7 @@ function MoviesCard() {
                         <img className="movies-card__image" src={movieFifteen} alt="Война искусств" />
                         <figcaption className="movies-card__description-like-container">
                             <p className="movies-card__description">Война искусств</p>
-                            <img type="button" className="movies-card__like-button" src={likeInactive} alt="Иконка кнопки сохранения фильма"></img>
+                            <img type="button" className="movies-card__del-button" src={btnDelMovie} alt="Иконка кнопки сохранения фильма"></img>
                         </figcaption>
                         <div className="movies__line"></div>
                         <p className="movies-card__duration">1ч 42м</p>
@@ -168,7 +170,7 @@ function MoviesCard() {
                         <img className="movies-card__image" src={movieSixteen} alt="Зона" />
                         <figcaption className="movies-card__description-like-container">
                             <p className="movies-card__description">Зона</p>
-                            <img type="button" className="movies-card__like-button" src={likeActive} alt="Иконка кнопки сохранения фильма"></img>
+                            <img type="button" className="movies-card__del-button" src={btnDelMovie} alt="Иконка кнопки сохранения фильма"></img>
                         </figcaption>
                         <div className="movies__line"></div>
                         <p className="movies-card__duration">1ч 42м</p>

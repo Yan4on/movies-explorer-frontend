@@ -6,7 +6,14 @@
 @media screen and (max-width: 768px) {
   .landing {
     margin: 0 auto;
-    padding: 0;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .landing {
+    margin: 0 auto;
+    padding: 0 0 40px;
   }
 }
 
@@ -42,6 +49,7 @@
 
 @media screen and (max-width: 768px) {
   .landing__title {
+    margin: auto;
     font-size: 40px;
     line-height: 50px;
     text-align: center;
@@ -91,15 +99,14 @@
 
 @media screen and (max-width: 768px) {
   .landing__logo {
-    margin: 10px auto 55px;
+    margin: 140px auto 55px;
   }
 }
-
 
 @media screen and (max-width: 320px) {
   .landing__logo {
     max-width: 210px;
-    margin: 140px auto 48px;
+    margin: 70px auto 48px;
   }
 }
 
@@ -120,6 +127,14 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .landing__info {
+    max-width: 260px;
+    text-align: center;
+    margin: 0 auto 80px;
+  }
+}
+
 .landing__info-more {
   font-weight: 500;
   line-height: 16px;
@@ -136,9 +151,6 @@
     display: flex;
     margin: auto;
   }
-}
-
-.landing__info-more-wrap {
 }
 
 @media screen and (max-width: 768px) {
