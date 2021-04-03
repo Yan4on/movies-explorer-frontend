@@ -151,7 +151,7 @@ function MoviesCard() {
                     <figure className="movies-card">
                         <img className="movies-card__image" src={movieFourteen} alt="Скейт — кухня" />
                         <figcaption className="movies-card__description-like-container">
-                            <p className="movies-card__description">Скейт — кухня</p>
+                            <p className="movies-card__description">Скейт —кухня</p>
                             <img type="button" className="movies-card__del-button" src={btnDelMovie} alt="Иконка кнопки сохранения фильма"></img>
                         </figcaption>
                         <div className="movies__line"></div>
