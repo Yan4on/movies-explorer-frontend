@@ -41,9 +41,10 @@
 
 @media screen and (max-width: 510px) {
     .nav-tab__link {
-        width: 82px;
-        height: 26px;
+        line-height: 16px;
+        width: 129px;
+        height: 36px;
         border-radius: 6px;
-        font-size: 10px;
+        font-size: 12px;
     }
 }
