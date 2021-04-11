@@ -1,4 +1,4 @@
-import imageNotFound from '../images/image-not-found.png';
+import imageNotFound from '../images/main-logo.svg';
 
 class MainApi {
     constructor(config) {
@@ -83,7 +83,7 @@ class MainApi {
                 year: movie.year ? movie.year : 'Год не указан',
                 description: movie.description ? movie.description : 'Описание не указано',
                 image: movie.image ? `https://api.nomoreparties.co${movie.image.url}` : `${imageNotFound}`,
-                trailer: movie.trailerLink ? movie.trailerLink : 'https://me-mk.students.nomoredomains.monster/not-found',
+                trailer: movie.trailerLink ? movie.trailerLink : 'https://find-films.students.nomoredomains.icu/not-found',
                 thumbnail: `https://api.nomoreparties.co${movie.image.formats.thumbnail ? movie.image.formats.thumbnail.url : ''}` || imageNotFound,
                 movieId: movie.id,
                 nameRU: movie.nameRU ? movie.nameRU : 'Название не указано',
@@ -120,52 +120,12 @@ class MainApi {
         });
     }
 
-    register(email, password, name) {
-        return fetch(`${this._url}/signup`, {
-            method: 'POST',
-            headers: this._headers,
-            body: JSON.stringify({email, password, name})
-        })
-        .then((res => res.json()))
-        .catch(() => {
-            return Promise.reject('Произошла ошибка при попытке зарегистрироваться');
-        });
-    }
 
-    login(email, password) {
-        return fetch(`${this._url}/signin`, {
-            method: 'POST',
-            headers: this._headers,
-            body: JSON.stringify({email, password})
-        })
-        .then((res => res.json()))
-        .catch(() => {
-            return Promise.reject('Произошла ошибка при попытке авторизоваться');
-        });
-    }
-
-    getContent(jwt) {
-        return fetch(`${this._url}/users/me`, {
-            method: 'GET',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${jwt}`
-            }
-        })
-        .then((res) => {
-            if (res.ok) {
-                return res.json();
-            }
-        })
-        .catch(() => {
-            return Promise.reject('Произошла ошибка при попытке проверить токен');
-        });
-    }
 }
 
 const mainApi = new MainApi({
-    url: 'https://api.find-films.students.nomoredomains.icu',
+    // url: 'https://api.find-films.students.nomoredomains.icu',
+    url: "http://localhost:3000",
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/JSON',
