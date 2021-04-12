@@ -124,8 +124,8 @@ class MainApi {
 }
 
 const mainApi = new MainApi({
-    // url: 'https://api.find-films.students.nomoredomains.icu',
-    url: "http://localhost:3000",
+    url: 'https://api.find-films.students.nomoredomains.icu',
+    // url: "http://localhost:3000",
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/JSON',
