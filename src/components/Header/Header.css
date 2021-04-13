@@ -155,11 +155,11 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .header__auth-container {
     display: none;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   .header__menu-burger-container {
@@ -200,18 +200,6 @@
     right: 15px;
   }
 }
-
-/* @media screen and (max-width: 840px) {
-    .header {
-        margin: 18px 30px 18px 30px;
-    }
-} */
-
-/* @media screen and (max-width: 510px) {
-    .header {
-        margin: 18px 14px 18px 14px;
-    }
-} */
 
 @media screen and (max-width: 510px) {
   .header__auth-container {

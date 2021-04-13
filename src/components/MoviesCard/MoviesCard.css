@@ -4,10 +4,18 @@
     position: relative;
 }
 
+.movies-card__button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
 
 .movies-card__image {
     width: 100%;
-    max-height: 100%;
+    height: 151px;
     object-fit: cover;
     cursor: pointer;
 }
@@ -22,11 +30,18 @@
 
 .movies-card__like-button {
     cursor: pointer;
+    background-image: url(../../images/like-active.png);
+}
+
+.movies-card__dislike-button {
+    cursor: pointer;
+    background-image: url(../../images/like-inactive.png);
 }
 
 .movies-card__del-button {
     display: none;
     cursor: pointer;
+    background-image: url(../../images/btn-del-movie.svg);
 }
 
 .movies-card:hover .movies-card__del-button {

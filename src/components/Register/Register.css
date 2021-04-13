@@ -110,6 +110,11 @@
     transition: ease .3s;
 }
 
+.register__input-error {
+    padding-left: 16px;
+    color: red;
+}
+
 @media screen and (max-width: 510px) {
     .register {
         padding: 56px 30px 30px 30px;
