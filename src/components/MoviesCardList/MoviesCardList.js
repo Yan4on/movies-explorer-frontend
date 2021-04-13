@@ -21,9 +21,9 @@ function MoviesCardList(props) {
                     />
                 ))}
             </div>
-            {props.savedMovies ? props.movies.length < 1 && <p className="movies-card-list__message">Нет добавленных фильмов</p> : props.movies.length < 1 && <p className="movies-card-list__message">{props.movieSearchError}</p>}
+            {props.Movies ? props.movies.length < 1 && <p className="movies-card-list__message">Нет добавленных фильмов</p> : props.movies.length < 1 && <p className="movies-card-list__message">{props.movieSearchError}</p>}
             {
-                props.savedMovies
+                props.Movies
                 ? ''
                 : (props.movies.length > 0) && (props.movies.length > limit) ? <button className="movies-card-list__more-movies-button" onClick={showMoreMovies}>Ещё</button> : ''
             }

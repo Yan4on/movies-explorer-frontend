@@ -1,5 +1,5 @@
-// export const URL_MAIN = 'http://localhost:3000';
-export const URL_MAIN = 'https://api.find-films.students.nomoredomains.icu';
+export const URL_MAIN = 'http://localhost:3000';
+// export const URL_MAIN = 'https://api.find-films.students.nomoredomains.icu';
 
 export const register = (email, password, name) => {
     return fetch(`${URL_MAIN}/signup`, {
