@@ -15,6 +15,7 @@ import mainApi from '../../utils/MainApi';
 import moviesApi from '../../utils/MoviesApi';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import InfoTooltip from '../InfoTooltip/InfoTooltip';
+import BlockAction from '../BlockAction/BlockAction';
 import * as auth from '../../utils/auth';
 
 function App() {
@@ -295,6 +296,7 @@ function App() {
             noticeMessage={noticeMessage}
           />
         </div>
+        {loading && <BlockAction loading={loading} />}
       </CurrentUserContext.Provider>
     </div>
   );

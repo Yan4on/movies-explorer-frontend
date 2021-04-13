@@ -15,7 +15,6 @@ function MoviesCard(props) {
     }
 
     return (
-        <>
             <figure className="movies-card" key={props.movie._id}>
                 <a
                     className="movies-card__trailer-link"
@@ -41,7 +40,6 @@ function MoviesCard(props) {
                 <div className="movies__line"></div>
                 <p className="movies-card__duration">{`${Math.floor(props.movie.duration / 60)}ч ${props.movie.duration % 60}м`}</p>
             </figure>
-        </>
     );
 }
 

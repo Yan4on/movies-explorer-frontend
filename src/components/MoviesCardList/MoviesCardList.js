@@ -15,7 +15,7 @@ function MoviesCardList(props) {
                 {props.movies.length > 0 && props.movies.slice(0, limit).map((movie, i) => (
                     <MoviesCard
                     movie={movie}
-                    key={i}
+                    key={movie.id ? movie.id : movie.movieId}
                     savedMovies={props.savedMovies}
                     onToggleMovie={props.onToggleMovie}
                     />
