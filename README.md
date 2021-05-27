@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+# Фронтенд дипломной работы Яндекс.Парактикум
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Это одностраничное приложение написанное на React в функциональном стиле. Приложение позволяет пользователям найти интересные для него фильмы и сохранить к себе в избранное на отдельную страницу.
 
-## Available Scripts
+- Авторизация реализована на cookies: пользователю достаточно один раз авторизоваться, чтобы при повторном открытии сайта заходить на личные страницы. Внутренние роуты защищены для неавторизованных пользователей.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Реализованы запросы к бэкенду с использованием промисов. В момент выполнения запросов работают прелоадеры. Все промисы завершаются Catch. При ошибках пользователю показываются сообщения.
+- Реализована моментальная валидация полей в формах(форма регистрации, авторизации, профиля и поисковая строчка). Кнопки заблокированы до тех пор, пока поля невалидные. Для валидации сделан кастомный хук.
+- Реализован фильтр по фильмам короткометражкам.
+- Реализована страница 404 при попытке зайти на несуществующую страницу.
+- Реализована кнопка Еще с подгрузкой новых фильмов. Количество подгружаемых и начальных фильмов на странице зависит от разрешения экрана.
+CSS
+- При именовании CSS-стилей применена методология БЭМ. Для построения каркаса приложения используется flexbox, для построения сетки карточек с фильмамим - grid.
